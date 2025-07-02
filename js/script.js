@@ -39,7 +39,7 @@ document.getElementById('csvForm').addEventListener('submit', function (e) {
   
       const link = document.getElementById('downloadLink');
       link.href = url;
-      link.download = `${tableName}_inserts.txt`;
+      link.download = `${tableName}_inserts.sql`;
       link.style.display = 'inline-block';
       link.textContent = '⬇️ Baixar INSERTs';
     };
