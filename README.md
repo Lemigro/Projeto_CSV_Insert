@@ -11,7 +11,7 @@ Ferramenta simples e web-based para converter arquivos **CSV** em comandos SQL `
 - Suporte a definição de:
   - Nome da tabela
   - Owner (esquema) opcional
-- Download do resultado como arquivo `.txt`
+- Download do resultado como arquivo `.sql`
 - Interface responsiva com **Bootstrap 5**
 
 ---
