@@ -10,21 +10,22 @@
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-md-6 bg-white p-5 rounded shadow">
-        <h2 class="mb-4 text-center">CSV para SQL INSERT</h2>
+        <h2 class="mb-4 text-center">CSV/XLSX para SQL INSERT</h2>
 
         <form id="csvForm">
           <div class="mb-3">
-                <label for="ownerName" class="form-label">Owner (opcional):</label>
-                <input type="text" class="form-control" id="ownerName" name="ownerName">
+            <label for="ownerName" class="form-label">Owner (opcional):</label>
+            <input type="text" class="form-control" id="ownerName" name="ownerName">
           </div>
+
           <div class="mb-3">
             <label for="tableName" class="form-label">Nome da tabela:</label>
             <input type="text" class="form-control" id="tableName" name="tableName" required>
           </div>
 
           <div class="mb-3">
-            <label for="csvFile" class="form-label">Selecione o CSV:</label>
-            <input type="file" class="form-control" id="csvFile" accept=".csv" required>
+            <label for="csvFile" class="form-label">Selecione o arquivo (CSV ou XLSX):</label>
+            <input type="file" class="form-control" id="csvFile" accept=".csv,.xlsx" required>
           </div>
 
           <button type="submit" class="btn btn-primary w-100">Converter</button>
@@ -36,6 +37,9 @@
       </div>
     </div>
   </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
   <script src="js/script.js"></script>
 </body>
